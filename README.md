@@ -1,4 +1,4 @@
-# KubernetesDemo
+# Kubernetes Demo
 
 This is a demo of using Kubernetes with .NET Core
 
