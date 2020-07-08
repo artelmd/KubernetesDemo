@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:  
+  name: k8s-deployment
+  namespace: k8s
+spec: 
+  replicas: 1  
+  selector:
+    matchLabels:
+      app: k8s 
+  template:
+    metadata:     
+      labels:
+        app: k8s
+    spec:
+      containers:
+      - image: localhost:5000/k8s:1.0       
+        name: k8s
+        ports:
+        - containerPort: 8080
